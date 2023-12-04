@@ -61,6 +61,10 @@ app.get("/", (req, res) => {
   res.type("html").send(html);
 });
 
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
