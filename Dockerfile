@@ -10,4 +10,5 @@ RUN apk --no-cache add curl && \
     npm i
 
 EXPOSE 3000
+ENV HOST=0.0.0.0
 CMD ["node", "index.js"]
