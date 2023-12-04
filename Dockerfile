@@ -8,6 +8,6 @@ WORKDIR "/var/task"
 RUN apk --no-cache add curl && \
     touch .env && \
     npm i
-    
-EXPOSE 8080
+
+EXPOSE 3000
 CMD ["node", "index.js"]
